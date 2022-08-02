@@ -8,8 +8,9 @@ typedef struct
 int main(){
     Point points[5];
     for(int i=0; i<5; ++i){
-        points[i].xpos = i;
-        points[i].ypos = i*2;
+        // points[i].xpos = i;
+        // points[i].ypos = i*2;
+        points[i] = {i, 3*i};
     }
 
     for(int i=0; i<5; ++i){
